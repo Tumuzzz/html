@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsiivinen Pelisivu</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* NAVIGAATIO */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #444;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* GRID-KORTIT */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      margin-top: 20px;
+    }
+
+    /* TABLET */
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      body {
+        font-size: 16px;
+      }
+    }
+
+    /* MOBIILI */
+    @media (max-width: 600px) {
+
+      body {
+        font-size: 14px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* DESKTOP */
+    @media (min-width: 1200px) {
+      body {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pelisivu</h1>
+    <p>tietoa parista pelistä</p>
+  </header>
+
+
+
+  <main class="cards">
+
+    <div class="card">
+      <img src="mine.jpg" alt="Peli 1">
+      <h2>Minecraft</h2>
+      <p>Rakenna ja seikkaile avoimessa maailmassa. ja etene pelissä.</p>
+    </div>
+
+    <div class="card">
+      <img src="fortnite.jpg" alt="Peli 2">
+      <h2>Fortnite</h2>
+      <p>Suosittu battle royale -peli, jossa taistellaan viimeisenä selviytymään.</p>
+    </div>
+
+    <div class="card">
+      <img src="rocket.jpg" alt="Peli 3">
+      <h2>Rocket League</h2>
+      <p>Jalkapalloa autoilla, jossa pelaajat kilpailuvat toisiaan vastaan.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Pelisivu</p>
+  </footer>
+
+</body>
+</html>
