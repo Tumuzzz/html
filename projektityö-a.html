@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omat Nettisivut</title>
+    <link rel="stylesheet" href="projektityyli.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minun Nettisivuni</h1>
+
+        <nav>
+            <a href="#Etusivu">Etusivu</a>
+            <a href="#Tietoa minusta">Tietoa minusta</a>
+            <a href="#Ota yhteyttä">Ota yhteyttä</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="Etusivu">
+            <h2>Tervetuloa sivustolleni!</h2>
+            <p>
+                Hei! Nimeni on Tuomas Ihalainen. Tämä on projektityöni, jossa esittelen itseni ja opittuja taitojani nettisivujen tekemisestä.
+            </p>
+
+
+
+        <section id="Tietoa minusta">
+            <h2>Harrastukset/Vapaa-aika</h2>
+            <p>Vapaa-ajallani pelaan tietokoneellani, kuuntelen musiikkia ja soitan rumpuja.</p>
+
+            <h2>Koulutus</h2>
+            <p>Opiskelen tieto- ja viestintätekniikkaa. Olen ensimmäisen vuoden opiskelija. Aijempaa koulutusta minulla ei ole.</p>
+
+            <h2>Osaamiset</h2>
+
+            <table>
+                <tr>
+                    <th>Taito</th>
+                    <th>Taso</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Kohtuullinen</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Kohtuullinen</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>Alkeet/Perusteet</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Esimerkkivideo</h2>
+
+            <iframe width="300" height="200"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Esimerkkivideo"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="Ota yhteyttä">
+            <h2>Ota yhteyttä</h2>
+
+            <form action="mailto:tuomas.ihalainen@edu.sakky.fi" method="post" enctype="text/plain">
+                <input type="text" name="nimi" placeholder="Nimi" required>
+
+                <input type="email" name="email" placeholder="Sähköposti" required>
+
+                <textarea name="viesti" placeholder="Jätä viesti halutessasi!"></textarea>
+
+                <button type="submit">Lähetä</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>
